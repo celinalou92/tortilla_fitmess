@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="java.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Tortilla Fit Mess</title>
+  </head>
+  <body>
+<!-- Heading = Open Sans, Body = Source Sans Pro -->
+
+    <header>
+    <!-- Boostrap4 Nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="brand">
+            <a class="navbar-brand" href="#">Tortilla Fitmess</a>
+        </div>
+        <div class="nav_content">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <!-- Home Project Contact Me -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="projects.html">Blog</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Contact Me</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <!-- end navbar -->
+    </header>
+    <main role=main>
+      <div class="container-fluid top-ribbon">
+        <p>Tortilla Fitmess disclaimer: This website was created as a dev project, I am not a fitness trainer hence <span id="fit-text">~*fit<span id="mess-text">mess</span>*~</span></p>
+      </div>
+      <div class="hero container-fluid">
+        <video loop muted autoplay preload="auto">
+          <source src="hero_vid.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text">
+          <h1 data-aos="fade-up" data-aos-easing="ease-in" data-aos-once="true">Let's get to work</h1>
+          <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-delay="500" data-aos-once="true">It's okay hype yourself up, but lets do it for more than the gram.
+            <br>You got a plan? No? Alright then lets go</p>
+        </div>
+      </div>
+      <div class="content-rich-container">
+        <div class="container-fluid">
+          <div class="row info">
+            <div class="info-text" data-aos="zoom-in" data-aos-duration="11000" data-aos-easing="ease-in" data-aos-once="true">
+              <h1>What is Tortilla Fitmess?</h1>
+              <p>A library of workouts inspired by people who want to workout from anywhere with minimal equipment. Start slow, select a few muscle groups to workout and use low or no weight if you are a beginner. *The creator of this website is not a certified fitness trainer hence <span id="fit-text">~*fit<span id="mess-text">-mess</span>*~</span></p>
+            </div>
+          </div>
+          <div class="row info">
+            <div class="info-text" data-aos="zoom-in" data-aos-duration="11000" data-aos-easing="ease-in" data-aos-delay="500" data-aos-once="true">
+              <h1>Choosing what to train?</h1>
+              <p>The point is to train your enitre body. A balanced workout routine will work out most of your muscles by the end of the week. Working out your chest helps with posture, working out your back helps with back pain, working out your entire leg helps with knee pain. Do some research!
+                  <button type="button" name="button" id="blog-btn">Or check the blog</button>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 callout">
+              <div class="calloutL-image callout-image">
+              </div>
+              <div class="callout-text">
+                <h3>Train anywhere</h3>
+                <p>Workouts that use minimal equipment mixed in with some high-heart rate workouts to give you plently of ideas. Was your workout too easy? Mix in  heavier weights/more high-heart rate moves.</p>
+              </div>
+            </div>
+            <div class="col-md-6 callout">
+              <div class="calloutR-image callout-image">
+              </div>
+              <div class="callout-text">
+                <h3>Freedom to do you</h3>
+                <p>No expectations, no pay wall plans and no pressure. Move and learn at your own pace, not everyone needs to have fitstagram modal goals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Start Gallery -->
+      <div class="gallery-main">
+      <div class="container-fluid gallery-ribbon">
+        <div class="row">
+          <h2>Video Gallery</h2>
+          <div class="btn-containter" id="btnContainer">
+            <button class="btn-gal active" onclick="filterSelection('all')">Show All</button>
+            <button class="btn-gal" onclick="filterSelection('chest')">Chest</button>
+            <button class="btn-gal" onclick="filterSelection('back')"> Back</button>
+            <button class="btn-gal" onclick="filterSelection('bicep')">Bicep</button>
+          </div>
+        </div>
+      </div>
+        <!-- start album boostrap template -->
+        <div class="album py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 column chest">
+                <div class="card mb-4 shadow-sm" width="100%" height="225">
+                   <iframe src="https://www.youtube.com/embed/XGtjACeyHtc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="225"></iframe>
+                   <div class="card-body">
+                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                     <div class="d-flex justify-content-between align-items-center">
+                       <small class="text-muted">9 mins</small>
+                       <div class="btn-group">
+                         <button type="button" class="btn btn-sm btn-outline-secondary">Pre-View</button>
+                         <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 column chest">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 column chest">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 column back">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 column back">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 column back">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 column bicep">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 column bicep">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 column bicep">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end album boostrap template -->
+      </div>
+    </main>
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
